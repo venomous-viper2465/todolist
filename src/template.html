@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+    <div id="mainbox">
+        <dialog id="create-project-form">
+            <form>
+            <img src="./images/closebutton.svg">
+            <div>
+                <input type="text" name="projects-name" id="projects-name" placeholder="Project Name" required>
+            </div>
+            <p>Project Color</p>
+            <div id="project-color-picker">
+                <div class="color-option-box" p-color="#0077b6"></div>
+                <div class="color-option-box active-color-picked" p-color="#d62828"></div>
+                <div class="color-option-box" p-color="#f77f00"></div>
+                <div class="color-option-box" p-color="#fcbf49"></div>
+                <div class="color-option-box" p-color="#eae2b7"></div>
+            </div>
+            <button type="submit">Create Project</button>
+        </form>
+        </dialog>
+        <dialog id="details-of-task">
+            <div class="details-of-task-content">
+            <div class="task-name">
+                <p>Do your laundry</p>
+                <img src="./images/closebutton.svg">
+            </div>
+            <div class="deadline">
+                <p>Due date:</p>
+                <p>11-03-2022</p>
+            </div>
+            <div class="priority-of-task">
+                <p>Priority:</p>
+                <p></p>
+            </div>
+            <div class="name-of-project">
+                <p>Project</p>
+                <div class="details-of-project">
+                    <div></div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="description-of-project">
+                <p>Description:</p>
+                <p></p>
+            </div>
+        </div>
+        </dialog>
+        <div id="sidebar">
+            <div class="branding">
+                <img src="./images/logo.svg">
+                <p>todo</p>
+            </div>
+            <div class="tasks">
+                <p>TASKS</p>
+                <div class="taskoptions">
+                    <div class="addtask">
+                        <img src="./images/plugicon.svg">
+                        <p>Add new task</p>
+                    </div>
+                    <div class="inbox active-nav" category="side-nav" project-id="inbox">
+                        <img src="./images/inboxbrown.svg">
+                        <p>Inbox</p>
+                        <div class="numtasks"><p></p></div>
+                    </div>
+                    <div class="today" category="side-nav" project-id="today">
+                        <img src="./images/clockbrown.svg">
+                        <p>Today</p>
+                        <div class="numtasks"><p></p></div>
+                    </div>
+                    <div class="upcoming" category="side-nav" project-id="upcoming">
+                        <img src="./images/calendarbrown.svg">
+                        <p>Upcoming</p>
+                        <div class="numtasks"><p></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="myprojects">
+                <div>
+                <p>MY PROJECTS</p>
+                <img src="./images/plugicon.svg">
+                </div>
+                <div class="projectoptions">
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <dialog style="margin: auto" id="addtaskform">
+                <p>Task Details</p>
+                <img src="./images/closebutton.svg">
+                <form>
+                    <div>
+                        <input type="text" name="taskname" id="taskname" placeholder="Task Name">
+                    </div>
+                    <textarea>Description</textarea>
+                    <div>
+                        <label for="duedate">Due date</label>
+                        <input type="date" name="duedate" id="duedate">
+                        <p id="date-error"></p>
+                    </div>
+                    <div>
+                        <p>Priority</p>
+                        <div>
+                            <div>
+                                <input type="radio" name="priority" value="important" id="important">
+                                <label for="important">Important</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="priority" value="normal" id="moderate">
+                                <label for="moderate">Normal</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="priority" value="low" id="low">
+                                <label for="low">Low</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Project</p>
+                            <select name="pname">
+                                <option value="0">inbox</option>
+                            </select>
+                        </div>
+                        <button type="submit">Add Task</button>
+                    </div>
+                </form>
+            </dialog>
+            <!-- <div></div> -->
+        </div>
+    </div>
+</body>
+</html>

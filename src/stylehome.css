@@ -1,0 +1,684 @@
+@font-face {
+    font-family: 'gothambold';
+    src: url('./fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('./fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('./fonts/gothambold-webfont.woff2') format('woff2'),
+         url('./fonts/gothambold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('./fonts/gothambook-webfont.woff2') format('woff2'),
+         url('./fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('./fonts/gotham-light-webfont.woff2') format('woff2'),
+         url('./fonts/gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('./fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('./fonts/gothamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('./fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('./fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('./fonts/gothammedium_1-webfont.woff2') format('woff2'),
+         url('./fonts/gothammedium_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamthin';
+    src: url('./fonts/gotham-thin-webfont.woff2') format('woff2'),
+         url('./fonts/gotham-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+input:focus{
+    border-color: #DADADA;
+}
+body{
+    --brown-text-color: #CEBEA4;
+    --white-color: #FFFFFF;
+    --orange-color: #FF5631;
+    --hover-black: #282828;
+}
+
+#mainbox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#sidebar{
+    color: var(--brown-text-color);
+    width: 24vw;
+    height: 100%;
+    background-color: #1E1E1E;
+    padding-left: 48px;
+    padding-right: 28px;
+    padding-top: 40px;
+}
+
+.branding{
+    font-family: gothambold;
+    font-size: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.tasks > p{
+    font-family: gothambold;
+    font-size: 16px;
+    color: var(--brown-text-color);
+    margin-bottom: 20px;
+}
+
+.taskoptions > div{
+    padding: 12px;
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+    gap: 10px;
+    font-family: gothammedium;
+    font-size: 16px;
+    color: var(--brown-text-color);
+}
+
+.active-nav{
+    background-color: var(--orange-color);
+    border-radius: 10px;
+    color: var(--white-color);
+}
+
+.active-nav > p{
+    color: var(--white-color);
+}
+
+.active-nav > div{
+    background-color: var(--white-color);
+}
+
+.project1 > .pcolor{
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #FF6B6B;
+}
+
+.sideprojects{
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    align-items: center;
+    font-family: gothammedium;
+    font-size: 16px;
+    color: #444444;
+}
+
+.myprojects > div > p{
+    font-family: gothambold;
+    font-size: 16px;
+    color:var(--brown-text-color);
+}
+
+.myprojects > div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.myprojects{
+    margin-top: 48px;
+}
+
+.numtasks{
+    width: 24px;
+    height: 18px;
+    background-color: var(--brown-text-color);
+    border-radius: 3px;
+    margin-left: auto;
+    font-family: gothammedium;
+    font-size: 12px;
+    color: #444444;
+    /* text-align: center;
+    vertical-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    width: 76vw;
+    background-color: #0D0D0D;
+}
+
+#content > div{
+    width: 50vw;
+    height: 100%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.taskButtonStyle{
+    display:flex;
+    gap: 11px;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    font-family: gothammedium;
+    font-size: 16px;
+    color: var(--brown-text-color);
+    margin-bottom: 16px;
+}
+
+
+.colorBox{
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.taskactions{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.taskcard{
+    display: flex;
+    flex-direction: column;
+    font-family: gothammedium;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #CEBEA4;
+    padding: 15px 20px;
+    margin-bottom: 16px;
+    background-color: #1E1E1E;
+    color: var(--brown-text-color);
+}
+
+.taskcardsection1{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px
+}
+
+.taskcardsection1 > button {
+    border-radius: 3px;
+border: 2px solid #CEBEA4;
+width: 16px;
+height: 16px;
+background-color: transparent;
+cursor: pointer;
+}
+
+.taskcard-project{
+    display: flex;
+    gap: 6px;
+    padding: 0px 17px;
+    font-family: gothammedium;
+    font-size: 14px;
+    border-right: 1px solid #C7C7C7;
+    align-items: center;
+}
+
+.taskcard-project > div{
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+
+.task-priority{
+    padding: 4px 16px;
+    border-radius: 3px;
+    margin-left: 16px;
+    color: #fff;
+    font-family: gothammedium;
+}
+
+.task-details{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: gothamlight;
+    font-weight: 300;
+    font-size: 14px;
+    color: #CEBEA4;
+}
+
+.page-heading{
+    color: #CEBEA4;
+font-family: gothambold;
+font-size: 40px;
+margin-bottom: 40px;
+font-weight: 700;
+
+}
+
+.timeleft{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-right: 17px;
+    padding-left: 17px;
+    border-right: 1px solid #C7C7C7;
+    font-size: 14px;
+    font-family: gothammedium;
+    margin-left: 13px;
+}
+
+dialog{
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+    border: none;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1E1E1E;
+}
+
+dialog::backdrop{
+    background-color: rgba(84, 84, 84, 0.50);
+}
+
+dialog > p{
+    color: #000;
+font-family: gothambold;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+input, textarea{
+    font-family: gothamlight;
+    font-size: 16px;
+    padding: 14px 12px;
+    margin-bottom: 16px;
+}
+
+textarea{
+    width: 400px;
+    border-radius: 8px;
+    border: 1px solid #DADADA;
+}
+
+form > div > #taskname{
+    width: 400px;
+    height: 48px;
+    border-radius: 8px;
+border: 1px solid #CEBEA4;
+color: #CEBEA4;
+background-color:#1E1E1E;
+}
+
+form > textarea + div > label{
+    font-family: gothammedium;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+form > textarea + div > input{
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #CEBEA4;
+    background-color: #1E1E1E;
+    color: var(--brown-text-color);
+    width: 120px;
+}
+
+form > textarea + div + div *{
+    font-family: gothamlight;
+    font-size: 14px;
+}
+
+form> textarea + div + div > p{
+    font-family: gothammedium;
+}
+
+form > textarea + div + div{
+    display: flex;
+    gap: 45px;
+}
+
+form> textarea + div + div > p + div{
+    display: flex;
+    gap: 16px;
+}
+
+form > textarea + div + div + div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+form > textarea + div + div + div > button {
+    width: 113px;
+height: 40px;
+border-radius: 8px;
+background: #FA9500;
+color: #fff;
+font-size: 14px;
+font-family: gothammedium;
+}
+
+form > textarea + div + div + div > div{
+    display: flex;
+    gap: 46px;
+    font-family: gothammedium;
+    font-size: 14px;
+    align-items: center;
+}
+
+select{
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: none;
+    background: none;
+    border: 2px solid #C7C7C7;
+}
+
+dialog > form > div > input{
+    width: 400px;
+height: 48px;
+border-radius: 8px;
+border: 1px solid #DADADA;
+font-family: gothamlight;
+font-size: 16px;
+}
+
+dialog > form > button{
+    width: 113px;
+    height: 40px;
+    border-radius: 8px;
+    background: #FA9500;
+    color: #fff;
+    font-size: 14px;
+    font-family: gothammedium;
+}
+
+[category="side-nav"]{
+    cursor: pointer;
+}
+
+.taskoptions > .addtask{
+    cursor: pointer;
+}
+.taskoptions > .addtask:hover{
+    background-color: var(--hover-black);
+    border-radius: 10px;
+}
+
+.myprojects > div:first-child > img{
+    cursor: pointer;
+}
+
+.page-heading + .taskButtonStyle{
+    cursor: pointer;
+    background-color: #1E1E1E;
+}
+
+
+
+.completed > .taskcardsection1 > p{
+    text-decoration: line-through;
+    color: #CEBEA4;
+    font-family: gothamlight;
+}
+
+.completed > .taskcardsection1 > button{
+    background-image: url('./images/checkbox\ 1.svg');
+    background-position: center;
+    background-size: cover;
+    border:none !important;
+    width: 20px;
+    height: 20px;
+}
+
+
+.details-of-task-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--brown-text-color);
+}
+
+.details-of-task-content > .deadline, .details-of-task-content > .priority-of-task, .details-of-task-content > .name-of-project{
+    display: flex;
+    gap: 40px;
+    font-family: gothamlight;
+    font-size: 14px;
+}
+
+.details-of-task-content > .deadline >p:last-child, .details-of-task-content > .priority-of-task >p:last-child{
+    font-family: gothammedium;
+}
+
+.details-of-task-content > .description-of-project{
+    font-family: gothamlight;
+    font-size: 14px;
+}
+
+.details-of-task-content > .description-of-project > p:last-child{
+    font-family: gothammedium;
+    max-width: 440px;
+    margin-top: 8px;
+    overflow-wrap: break-word;
+}
+
+.details-of-task-content > .task-name{
+    display: flex;
+    justify-content: space-between;
+    font-family: gothambold;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.details-of-task-content > .name-of-project > .details-of-project >p{
+    font-family: gothammedium;
+    font-size: 14px;
+}
+
+.details-of-task-content > .name-of-project > .details-of-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.details-of-task-content > .deadline >p:first-child, .details-of-task-content > .priority-of-task >p:first-child, .details-of-task-content > .name-of-project>p:first-child{
+    width: 70px;
+}
+
+
+.taskcard, .taskcardsection1, .task-details{
+    cursor: pointer;
+}
+
+[category="side-nav"]:hover{
+    background-color: var(--hover-black);
+    border-radius: 10px;
+}
+
+[category="side-nav"].active-nav:hover{
+    background-color: var(--orange-color);
+}
+
+#project-color-picker{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+
+.color-option-box{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+[p-color="#0077b6"]{
+    background-color: #0077b6;
+}
+
+[p-color="#d62828"]{
+    background-color: #d62828;
+}
+
+[p-color="#f77f00"]{
+    background-color: #f77f00;
+}
+
+[p-color="#fcbf49"]{
+    background-color: #fcbf49;
+}
+
+[p-color="#eae2b7"]{
+    background-color: #eae2b7;
+}
+
+#create-project-form > form > p{
+    font-family: gothammedium;
+    font-size: 14px;
+    color: #CEBEA4;
+}
+
+#create-project-form > form > img{
+    margin-bottom: 8px;
+    margin-left: 93%;
+    cursor: pointer;
+}
+
+#create-project-form > form > button{
+    cursor: pointer;
+}
+
+.active-color-picked{
+    border: 3px solid #CEBEA4;
+}
+
+#create-project-form{
+    background-color: #1E1E1E;
+
+}
+
+#projects-name{
+    border: 1px solid #CEBEA4;
+    background-color: #1E1E1E;
+    color: #CEBEA4;
+}
+
+#addtaskform{
+    background-color: #1E1E1E;
+
+}
+
+#addtaskform > p{
+    color: var(--brown-text-color);
+    display: inline-block;
+    margin-right: 55%;
+
+}
+
+#addtaskform > form > textarea{
+    border: 1px solid #CEBEA4;
+    background-color: #1E1E1E;
+    color: var(--brown-text-color);
+}
+
+#duedate{
+    width: 180px;
+    border: 1px solid #CEBEA4;
+}
+
+label{
+    color: var(--brown-text-color);
+}
+
+form> textarea + div + div > p{
+    color: var(--brown-text-color);
+}
+
+form > textarea + div + div + div > div > p{
+    color: var(--brown-text-color);
+}
+
+[name="pname"]{
+    border: 1px solid #CEBEA4;
+    color: var(--brown-text-color);
+}
+
+[type="submit"]{
+    cursor: pointer;
+}
+
+#addtaskform > img{
+    cursor: pointer;
+}
+
+.details-of-task-content > .task-name > img{
+    cursor: pointer;
+} 
+
+#date-error{
+    background-color: #ef233c;
+    padding: 4px;
+    font-family: gothammedium;
+    font-size: 14px;
+    border-radius: 4px;
+    display: none;
+    color: #fff;
+    margin-bottom: 16px;
+}
